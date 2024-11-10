@@ -16,33 +16,52 @@
 	</style>
 	<form action="/submit" method="get">
 		<h2>Internship Form</h2>
-		<label for="first-name-input">First Name</label> <br>
-		<input id="first-name-input" type="text" required placeholder="first name"><br>
+		<label for="first-name-input" class="form-label">First Name</label> <br>
+		<input id="first-name-input" class="form-control" type="text" required placeholder="first name"><br>
+		<div class="invalid-feedback">
+                Please enter your first name.
+            </div>
 		
-		<label for="last-name-input">Last Name</label> <br>
-		<input id="last-name-input" type="text" required placeholder="last name"><br>
+		<label for="last-name-input" class="form-label">Last Name</label> <br>
+		<input id="last-name-input" class="form-control" type="text" required placeholder="last name"><br>
+		<div class="invalid-feedback">
+                Please enter your last name.
+            </div>
 
-		<label for="email-input">Email Address</label><br>
-		<input id="email-input" type="email" required placeholder="xyz@abc.com"><br>
+		<label for="email-input" class="form-lable">Email Address</label><br>
+		<input id="email-input" class="form-control" type="email" required placeholder="xyz@abc.com"><br>
+		<div class="invalid-feedback">
+                Please enter a valid email address.
+            </div>
 
-		<label for="college-input">College</label><br>
-		<input id="college-input" type="text" required placeholder="college name"><br>
-       <label for ="graduation-year">Graduation Year</label><br>
-		<select id ="graduation year" required><br>
+		<label for="college-input" class="form-label">College</label><br>
+		<input id="college-input" class="form-control" type="text" required placeholder="college name"><br>
+		<div class="invalid-feedback">
+                Please enter your college name.
+            </div>
+       <label for ="grad-year-select" class="form-lable">Graduation Year</label><br>
+		<select id ="grad-year-select" class="form-control" required><br>
 		   <option>2020</option>
 		   <option>2021</option>
 		   <option>2022</option>
 		   <option>2023</option>  
 		    
-	   </select><br>
-		<label for="roll-no-input"> Roll No.</label><br>
-		<input id="roll-no-input" type="text" required placeholder="roll no."><br>
+	   </select>
+		<div class="invalid-feedback">
+                Please select your graduation year.
+            </div>
+		<label for="roll-no-input" class="form-label"> Roll No.</label><br>
+		<input id="roll-no-input"  class="form-control" type="text" required placeholder="roll no."><br>
 		
-		
-		<input id="conditions-checkbox" type="checkbox" required>
-		<label for="conditions-checkbox"> agree to terms and conditins</label><br> <br>
-
-		<button id="button" type="button" value="submit">Submit form</button>
+		<div class="invalid-feedback">
+                Please enter your roll number.
+            </div>
+		<input id="conditions-checkbox" class="form-check-input" type="checkbox" required>
+		<label for="conditions-checkbox" class="form-check-label"> agree to terms and conditins</label><br> <br>
+<div class="invalid-feedback">
+                You must agree to the terms and conditions.
+            </div>
+		<button id="btn btn-primary" type="submit" value="submit">Submit form</button>
 		
 		
 	</form>
